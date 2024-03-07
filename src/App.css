@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .App */
+.App {
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+/* .type-something */
+.type-something {
+    text-align: center;
+}
+
+/* .ingredients */
+.ingredients ul {
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+/* .recipe */
+.recipe {
+    /* border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(71, 71, 71, .4);
+    min-width: 40%;
+    background: #fff;
+    padding: 20px; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+
+/* .recipe-top */
+.recipe-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* .recipe-top img */
+.recipe-top img {
+    width: 30%;
+    border-radius: 50%;
+}
+
+/* .recipe-top .details */
+.recipe-top .details {
+    width: 60%;
+    padding: 10px;
+}
+
+/* .recipe-top .details .recipe-name */
+.recipe-top .details .recipe-name {
+    font-size: 25px;
+}
+
+/* .search-button */
+.search-button {
+    background: blueviolet;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* .search-button:focus */
+.search-button:focus {
+    outline: none;
+}
+
+
+/* .search-form */
+.search-form {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .search-bar */
+.search-bar {
+    width: 50%;
+    border: none;
+    padding: 10px;
+}
+
+/* Responsive  */
+/* Large */
+@media only screen and (max-width: 62em) {
+    .recipe-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Medium */
+@media only screen and (max-width: 45em) {
+    .recipe-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Small */
+@media only screen and (max-width: 40em) {
+    .recipe-list {
+        margin: 12px;
+        gap: 15px;
+    }
+}
+
+/* Smallest */
+@media only screen and (max-width: 25em) {
+    .recipe-list {
+        margin: 12px;
+        gap: 15px;
+    }
+}
